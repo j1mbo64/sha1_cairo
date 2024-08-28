@@ -9,7 +9,7 @@ on:
 permissions: read-all
 
 inputs:
-  tool_version: scarb 2.7.0
+  tool_versions: scarb 2.7.0
 
 jobs:
   check:
