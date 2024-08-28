@@ -1,4 +1,4 @@
-name: check cairo
+name: cairo
 
 on:
   workflow_dispatch:
@@ -7,6 +7,9 @@ on:
       - main
   pull_request:
 permissions: read-all
+
+inputs:
+  tool_version: scarb 2.7.0
 
 jobs:
   check:
