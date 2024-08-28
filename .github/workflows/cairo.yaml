@@ -13,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: asdf-vm/actions/install@v3
+      - uses: software-mansion/setup-scarb@v1
+        with:
+          scarb-version: "2.7.0"
       - run: scarb fmt --check
       - run: scarb build
       - run: scarb test
