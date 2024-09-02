@@ -1,7 +1,5 @@
 use core::dict::Felt252Dict;
-use sha1::utils::{
-    POW_2_32, POW_2_8, get_pow_2, bytes_to_u32, u32_leftrotate, u32_mod_add, u32_mod_add_5,
-};
+use sha1::utils::{POW_2_32, bytes_to_u32, u32_leftrotate, u32_mod_add, u32_mod_add_5,};
 
 const BLOCK_SIZE: u32 = 64;
 const BLOCK_SIZE_WO_LEN: u32 = 56;
